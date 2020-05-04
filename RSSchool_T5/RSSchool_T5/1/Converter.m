@@ -38,26 +38,14 @@ NSString *KeyCountry = @"country";
             [buffStr insertString:@" " atIndex:9];
             [buffStr insertString:@"-" atIndex:13];
             break;
-        case 7 ... 8:
-            [buffStr insertString:@"+" atIndex:0];
-            [buffStr insertString:@" " atIndex:4];
-            [buffStr insertString:@"(" atIndex:5];
-            [buffStr insertString:@")" atIndex:8];
-            [buffStr insertString:@" " atIndex:9];//?
-            break;
-        case 6:
+        case 6 ... 8:
             [buffStr insertString:@"+" atIndex:0];
             [buffStr insertString:@" " atIndex:4];
             [buffStr insertString:@"(" atIndex:5];
             [buffStr insertString:@")" atIndex:8];
             [buffStr insertString:@" " atIndex:9];
             break;
-        case 5:
-            [buffStr insertString:@"+" atIndex:0];
-            [buffStr insertString:@" " atIndex:4];
-            [buffStr insertString:@"(" atIndex:5];
-            break;
-        case 4:
+        case 4 ... 5:
             [buffStr insertString:@"+" atIndex:0];
             [buffStr insertString:@" " atIndex:4];
             [buffStr insertString:@"(" atIndex:5];
@@ -88,7 +76,7 @@ NSString *KeyCountry = @"country";
                 [buffStr insertString:@"+" atIndex:0];
                 [buffStr insertString:@" " atIndex:4];
                 [buffStr insertString:@"(" atIndex:5];
-                [buffStr insertString:@")" atIndex:8]; //@"+374 (12) 345-678"
+                [buffStr insertString:@")" atIndex:8];
                 [buffStr insertString:@" " atIndex:9];
                 [buffStr insertString:@"-" atIndex:13];
                 break;
@@ -141,37 +129,19 @@ NSString *KeyCountry = @"country";
                 [buffStr insertString:@" " atIndex:8];
                 [buffStr insertString:@"-" atIndex:12];
                 break;
-            case 7 :
+            case 5 ... 7 :
                 [buffStr insertString:@"+" atIndex:0];
                 [buffStr insertString:@" " atIndex:2];
                 [buffStr insertString:@"(" atIndex:3];
                 [buffStr insertString:@")" atIndex:7];
                 [buffStr insertString:@" " atIndex:8];
                 break;
-                case 6:
-                [buffStr insertString:@"+" atIndex:0];
-                [buffStr insertString:@" " atIndex:4];
-                [buffStr insertString:@"(" atIndex:5];
-                [buffStr insertString:@")" atIndex:8];
-                [buffStr insertString:@" " atIndex:9];
-                break;
-                case 5:
-                [buffStr insertString:@"+" atIndex:0];
-                [buffStr insertString:@" " atIndex:4];
-                [buffStr insertString:@"(" atIndex:5];
-                [buffStr insertString:@")" atIndex:8];
-                break;
-                case 3 ... 4:
+            case 2 ... 4:
                 [buffStr insertString:@"+" atIndex:0];
                 [buffStr insertString:@" " atIndex:2];
                 [buffStr insertString:@"(" atIndex:3];
                 break;
-                case 2:
-                [buffStr insertString:@"+" atIndex:0];
-                [buffStr insertString:@" " atIndex:2];
-                [buffStr insertString:@"(" atIndex:3];
-                break;
-                case 1:
+            case 1:
                 [buffStr insertString:@"+" atIndex:0];
                 break;
             default:
